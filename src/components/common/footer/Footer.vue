@@ -32,22 +32,27 @@
 </script>
 
 <style lang="less" scoped>
-	@navHeight: 52px;
-	
+    @footerNavHeight: 48px;
+    @colorItemLink: #222;
+    @colorItemHover: #f06;
+    @fontSize: .8rem;
+
 	.footer{
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		height: @navHeight;
-		line-height: @navHeight;
-		font-size: .9rem;
+		height: @footerNavHeight;
+		line-height: @footerNavHeight;
+		font-size: @fontSize;
 		background-color: #ddd;
 		overflow: hidden;
 
 		&-nav {
+			z-index: 99999;
+
 			li {
-				height: @navHeight;
-				line-height: @navHeight;
+				height: @footerNavHeight;
+				line-height: @footerNavHeight;
 				float: left;
 				text-align: center;
 			}
@@ -55,8 +60,13 @@
 			a {
 				display: block;
 				width: 100%;
-				height: @navHeight;
-				line-height: @navHeight;
+				height: @footerNavHeight;
+				line-height: @footerNavHeight;
+        color: @colorItemLink;
+
+        &:hover {
+          color: @colorItemHover;
+        }
 			}
 		}
 	}

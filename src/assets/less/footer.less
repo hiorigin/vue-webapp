@@ -1,0 +1,28 @@
+@footerNavHeight: 52px;
+	
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: @footerNavHeight;
+	line-height: @footerNavHeight;
+	font-size: .9rem;
+	background-color: #ddd;
+	overflow: hidden;
+
+	&-nav {
+		li {
+			height: @footerNavHeight;
+			line-height: @footerNavHeight;
+			float: left;
+			text-align: center;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: @footerNavHeight;
+			line-height: @footerNavHeight;
+		}
+	}
+}

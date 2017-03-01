@@ -1,0 +1,43 @@
+{
+    "status": 1,
+    "result": {
+        "list": [
+            {
+                "productId": "600100002115",
+                "productName": "双喜牌香烟",
+                "productPrice": 19,
+                "productQuantity": 1,
+                "productImage": "../assets/images/silder/test1.jpg"
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 8,
+                "productQuantity": 5,
+                "productImage": "../assets/images/silder/test2.jpg"
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 8,
+                "productQuantity": 5,
+                "productImage": "../assets/images/silder/test3.jpg"
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 8,
+                "productQuantity": 5,
+                "productImage": "../assets/images/silder/test4.jpg"
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 8,
+                "productQuantity": 5,
+                "productImage": "../assets/images/silder/test5.jpg"
+            }
+        ]
+    },
+    "message": "OK"
+}

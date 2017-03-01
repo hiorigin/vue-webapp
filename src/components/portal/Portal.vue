@@ -3,16 +3,16 @@
 </template>
 
 <script>
-	export default {
-		name: 'portal',
-		data() {
-			return {
-				
-			}
-		}
-	}
+export default {
+    name: 'portal',
+    data() {
+        return {
+
+        }
+    }
+}
 </script>
 
-<style leng="less">
-	
+<style lang="less">
+
 </style>

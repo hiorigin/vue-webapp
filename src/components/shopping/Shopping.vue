@@ -3,16 +3,16 @@
 </template>
 
 <script>
-	export default {
-		name: 'shopping',
-		data() {
-			return {
-				
-			}
-		}
-	}
+export default {
+    name: 'shopping',
+    data() {
+        return {
+
+        }
+    }
+}
 </script>
 
-<style leng="less">
-	
+<style lang="less">
+
 </style>
