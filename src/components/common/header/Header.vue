@@ -69,7 +69,7 @@ export default {
     &-nav {
         margin: 0 10px;
         height: @headerHeight;
-        z-index: 999999;
+        z-index: 9999;
     }
 }
 .swiper-container {

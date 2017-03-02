@@ -2,19 +2,44 @@
 	<footer class="footer">
 		<ul class="footer-nav">
 			<li class="nav-item">
-				<a href="#/home">首页</a>
+				<a href="#/home">
+                    <div class="nav-icon">
+                        <span class="iconfont icon-zhidai icon-item"></span>
+                    </div>
+                    <p class="nav-label"><span>首页</span></p>
+                </a>
 			</li>
-			<li>
-				<a href="#/portal">分类</a>
+			<li class="nav-item">
+				<a href="#/portal">
+                    <div class="nav-icon">
+                        <span class="iconfont icon-fenlei icon-item"></span>
+                    </div>
+                    <p class="nav-label"><span>分类</span></p>
+                </a>
 			</li>
-			<li>
-				<a href="#/shopping">购物圈</a>
+			<li class="nav-item">
+				<a href="#/shopping">
+                    <div class="nav-icon">
+                        <span class="iconfont icon-item icon-cri"></span>
+                    </div>
+                    <p class="nav-label"><span>购物圈</span></p>
+                </a>
 			</li>
-			<li>
-				<a href="#/cart">购物车</a>
+			<li class="nav-item">
+				<a href="#/cart">
+                    <div class="nav-icon">
+                        <span class="iconfont icon-gouwuche icon-item"></span>
+                    </div>
+                    <p class="nav-label"><span>购物车</span></p>
+                </a>
 			</li>
-			<li>
-				<a href="#/user">个人中心</a>
+			<li class="nav-item">
+				<a href="#/user">
+                    <div class="nav-icon">
+                        <span class="iconfont icon-user icon-item"></span>
+                    </div>
+                    <p class="nav-label"><span>个人中心</span></p>
+                </a>
 			</li>
 		</ul>
 	</footer>
@@ -32,7 +57,8 @@
 </script>
 
 <style lang="less" scoped>
-    @footerNavHeight: 48px;
+    @import "../../../assets/font/iconfont.css";
+    @footerNavHeight: 42px;
     @colorItemLink: #222;
     @colorItemHover: #f06;
     @fontSize: .8rem;
@@ -45,10 +71,11 @@
 		line-height: @footerNavHeight;
 		font-size: @fontSize;
 		background-color: #ddd;
-		overflow: hidden;
+        border-top: 1px solid #ccc;
+		/*overflow: hidden;*/
 
 		&-nav {
-			z-index: 99999;
+			z-index: 9999;
 
 			li {
 				height: @footerNavHeight;
@@ -62,12 +89,54 @@
 				width: 100%;
 				height: @footerNavHeight;
 				line-height: @footerNavHeight;
-        color: @colorItemLink;
+                color: @colorItemLink;
+                font-size: 0;
+                text-align: center;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-        &:hover {
-          color: @colorItemHover;
-        }
+                &:hover {
+                  color: @colorItemHover;
+                }
 			}
 		}
+
+        .nav-icon {
+            position: relative;
+            display: inline-block;
+            width: 32px;
+            height: 27px;
+
+            span {
+                position: relative;
+                top: -9px;
+                &:nth-child(2) .iconfont {
+                    font-size: 20px;
+                 }
+            }
+
+            .icon-cri {
+                position: absolute;
+                top: -12px;
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                /*background-color: #f06;*/
+                background: url("../../../assets/images/logo.png");
+                background-size: cover;
+            }
+        }
+        .nav-label {
+            margin-top: -25px;
+            text-align: center;
+            color: #999;
+            font-size: 10px;
+            line-height: 1.8;
+            span {
+                display: block;
+                width: 100%;
+            }
+        }
 	}
 </style>

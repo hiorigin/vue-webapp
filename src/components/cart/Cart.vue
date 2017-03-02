@@ -34,14 +34,14 @@
         display: block;
         position: fixed;
         right: -225px;
-        bottom: 115px;
+        bottom: 95px;
         width: 225px;
         height: 105px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
-        background-color: #ccc;
-        -webkit-transition: right 1s;
-        transition: right 1s;
+        background-color: #fff;
+        -webkit-transition: right .5s;
+        transition: right .5s;
         z-index: 100001;
 
         .quick-item {
@@ -53,29 +53,11 @@
             color: #fff;
             width: 25px;
             line-height: 1;
-            background-color: #ccc;
-            -webkit-transition: right 1s;
-            transition: right 1s;
+            background: rgba(0, 0, 0, .3);
+            cursor: pointer;
+            -webkit-transition: right .5s;
+            transition: right .5s;
         }
-
-        /*.itemShow {*/
-            /*right: 232px;*/
-            /*-webkit-transition: right 1s;*/
-            /*transition: right 1s;*/
-        /*}*/
-
-        /*&-tab {*/
-            /*position: fixed;*/
-            /*right: -225px;*/
-            /*bottom: 80px;*/
-            /*width: 225px;*/
-            /*height: 105px;*/
-            /*background-color: #fff;*/
-            /*border-top-left-radius: 5px;*/
-            /*border-bottom-left-radius: 5px;*/
-             /*-webkit-transition: right 1s;*/
-             /*transition: right 1s;*/
-         /*}*/
 
     }
 
@@ -99,15 +81,15 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, .5);
-        -webkit-transition: right 1s;
-        transition: right 1s;
+        background: rgba(0, 0, 0, .1);
+        -webkit-transition: right .5s;
+        transition: right .5s;
         z-index: 100000;
     }
 
     .show {
         right: 0;
-        -webkit-transition: right 1s;
-        transition: right 1s;
+        -webkit-transition: right .5s;
+        transition: right .5s;
     }
 </style>

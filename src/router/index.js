@@ -43,7 +43,8 @@ export default new Router({
             path: '/cart',
             name: 'Cart',
             components: {
-                default: Cart
+                default: Cart,
+                footer: Footer
             }
         },
         {
