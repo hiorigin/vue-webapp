@@ -3,27 +3,29 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
 
-import Home from '@/components/home/Home'
-import Cart from '@/components/cart/Cart'
-import Portal from '@/components/portal/Portal'
-import Shopping from '@/components/shopping/Shopping'
-import User from '@/components/user/User'
+import Home from '@/pages/home/Home'
+import Cart from '@/pages/cart/Cart'
+import Portal from '@/pages/portal/Portal'
+import Shopping from '@/pages/shopping/Shopping'
+import User from '@/pages/user/User'
+import Order from '@/pages/user/children/order/Order'
 
-import Search from '@/components/common/search/Search'
-import Header from '@/components/common/header/Header'
-import Footer from '@/components/common/footer/Footer'
+import Search from '@/components/search/Search'
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer'
+import Quick from '@/components/quick/Quick'
 
 Vue.use(Router);
 Vue.use(Resource);
+Vue.component('quick-menu', Quick)
 
 export default new Router({
     // path: '/',
     // component: App,
-    routes: [
-        {
+    routes: [{
             path: '',
             redirect: '/home'
-            // component: Home
+                // component: Home
         },
         {
             path: '/',
@@ -43,8 +45,14 @@ export default new Router({
             path: '/cart',
             name: 'Cart',
             components: {
-                default: Cart,
-                footer: Footer
+                default: Cart
+            }
+        },
+        {
+            path: '/order',
+            name: 'Order',
+            components: {
+                default: Order
             }
         },
         {

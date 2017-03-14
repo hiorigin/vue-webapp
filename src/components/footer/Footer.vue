@@ -22,7 +22,7 @@
                     <div class="nav-icon">
                         <span class="iconfont icon-item icon-cri"></span>
                     </div>
-                    <p class="nav-label"><span>购物圈</span></p>
+                    <p class="nav-label icon-label-cri"><span>购物圈</span></p>
                 </a>
 			</li>
 			<li class="nav-item">
@@ -57,8 +57,8 @@
 </script>
 
 <style lang="less" scoped>
-    @import "../../../assets/font/iconfont.css";
-    @footerNavHeight: 42px;
+    @import "../../assets/font/iconfont.css";
+    @footerNavHeight: 50px;
     @colorItemLink: #222;
     @colorItemHover: #f06;
     @fontSize: .8rem;
@@ -72,12 +72,13 @@
 		font-size: @fontSize;
 		background-color: #ddd;
         border-top: 1px solid #ccc;
-		/*overflow: hidden;*/
+        box-sizing: border-box;
 
 		&-nav {
 			z-index: 9999;
 
 			li {
+                width: 20%;
 				height: @footerNavHeight;
 				line-height: @footerNavHeight;
 				float: left;
@@ -93,17 +94,13 @@
                 font-size: 0;
                 text-align: center;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
-
-                &:hover {
-                  color: @colorItemHover;
-                }
 			}
 		}
 
         .nav-icon {
             position: relative;
             display: inline-block;
-            width: 32px;
+            width: 36px;
             height: 27px;
 
             span {
@@ -111,24 +108,23 @@
                 top: -9px;
                 &:nth-child(2) .iconfont {
                     font-size: 20px;
-                 }
+                }
             }
 
             .icon-cri {
                 position: absolute;
                 top: -12px;
                 display: block;
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
                 border: 1px solid #fff;
                 border-radius: 50%;
-                /*background-color: #f06;*/
-                background: url("../../../assets/images/logo.png");
+                background: url("../../assets/images/logo.png");
                 background-size: cover;
             }
         }
         .nav-label {
-            margin-top: -25px;
+            margin-top: -28px;
             text-align: center;
             color: #999;
             font-size: 10px;
@@ -136,7 +132,11 @@
             span {
                 display: block;
                 width: 100%;
+                
             }
+        }
+        .icon-label-cri{
+            margin-top: -25px;
         }
 	}
 </style>

@@ -24,7 +24,13 @@ export default {
 <style lang="less" scoped>
     @searchWrapHeight: 46px;
     .search-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 50px;
+        background-color: #f06;
+        z-index: 100;
     }
     .search-bar {
         display: webkit-box;
