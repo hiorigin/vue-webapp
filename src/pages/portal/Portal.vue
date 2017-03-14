@@ -282,7 +282,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-    // @import '../../assets/less/common'
     .portal{
         width: 100%;
         height: 100%;
@@ -290,8 +289,6 @@ export default {
         display: flex;
         -webkit-flex-flow: row;
         flex-flow: row;
-        // margin-top: 50px;
-        // overflow: hidden;
         &-wrap{
             height: 100%;
             margin: 50px 0;
@@ -323,15 +320,15 @@ export default {
             background-color: #f06;
             li{
                 width: 33.333%;
-                height: 100px;
+                height: auto;
                 float: left;
                 box-sizing: border-box;
                 margin-bottom: 5px;
-                overflow: hidden;
+                // overflow: hidden;
                 .img-wrap{
-                    height: 80px;
+                    height: auto;
                     background-color: #F8F8F8;
-                    overflow: hidden;
+                    // overflow: hidden;
                 }
                 img{
                     width: 100%;
