@@ -1,6 +1,7 @@
 <template>
     <div class="order">
         <h1>我的订单</h1>
+        <quick-menu></quick-menu>
     </div>
 </template>
 <script>

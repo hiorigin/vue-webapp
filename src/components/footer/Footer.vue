@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<ul class="footer-nav">
 			<li class="nav-item">
 				<a href="#/home">
@@ -119,7 +119,7 @@
                 height: 35px;
                 border: 1px solid #fff;
                 border-radius: 50%;
-                background: url("../../assets/images/logo.png");
+                background: url("../../assets/images/vux_logo.png");
                 background-size: cover;
             }
         }

@@ -17,6 +17,7 @@ import Quick from '@/components/quick/Quick'
 
 Vue.use(Router);
 Vue.use(Resource);
+Vue.component('search', Search)
 Vue.component('quick-menu', Quick)
 
 export default new Router({
