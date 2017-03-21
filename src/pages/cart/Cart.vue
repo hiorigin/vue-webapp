@@ -25,12 +25,12 @@
                 <li></li>
             </ul>
         </div>
-        <quick-menu></quick-menu>
+        <quick-nav></quick-nav>
     </div>
 </template>
 
 <script>
-    import Store from '@/store/store'
+    import Util from '@/util/util'
     export default {
         name: 'Cart',
         data() {
@@ -41,7 +41,7 @@
         },
         mounted () {
             this.$nextTick(function(){
-                Store.setTitle(this.title);
+                Util.setTitle(this.title);
             });
         },
         methods: {

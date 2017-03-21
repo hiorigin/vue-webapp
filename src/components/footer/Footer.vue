@@ -57,7 +57,7 @@
 </script>
 
 <style lang="less" scoped>
-    @import "../../assets/font/iconfont.css";
+    @import "/static/font/iconfont.css";
     @footerNavHeight: 50px;
     @colorItemLink: #222;
     @colorItemHover: #f06;
@@ -119,7 +119,7 @@
                 height: 35px;
                 border: 1px solid #fff;
                 border-radius: 50%;
-                background: url("../../assets/images/vux_logo.png");
+                background: url("/static/img/logo.png");
                 background-size: cover;
             }
         }

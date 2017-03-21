@@ -5,20 +5,20 @@
     </div>
 </template>
 <script>
-import Store from '@/store/store';
-    export default {
-        name: 'order',
-        data(){
-        return {
-                title: '我的订单'
-            }
-        },
-        mounted(){
-            this.$nextTick(function(){
-                Store.setTitle(this.title);
-            });
+import Util from '@/util/util';
+export default {
+    name: 'order',
+    data(){
+    return {
+            title: '我的订单'
         }
+    },
+    mounted(){
+        this.$nextTick(function(){
+            Util.setTitle(this.title);
+        });
     }
+}
 </script>
 <style lang="less" scoped>
     

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import Store from '@/store/store'
+    import Util from '@/util/util'
     export default {
         name: 'home',
         data(){
@@ -17,8 +17,11 @@
         },
         mounted () {
             this.$nextTick(function(){
-                Store.setTitle(this.title);
+                Util.setTitle(this.title);
             });
+        },
+        methods: {
+            
         }
     }
 </script>

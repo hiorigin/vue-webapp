@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Store from '@/store/store';
+import Util from '@/util/util'
 export default {
     name: 'shopping',
     data() {
@@ -13,7 +13,7 @@ export default {
     },
     mounted(){
         this.$nextTick(function(){
-            Store.setTitle(this.title);
+            Util.setTitle(this.title);
         });
     }
 }

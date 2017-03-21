@@ -13,12 +13,12 @@ import Order from '@/pages/user/children/order/Order'
 import Search from '@/components/search/Search'
 import Header from '@/components/header/Header'
 import Footer from '@/components/footer/Footer'
-import Quick from '@/components/quick/Quick'
+import QuickNav from '@/components/quick/Quick'
 
 Vue.use(Router);
 Vue.use(Resource);
 Vue.component('search', Search)
-Vue.component('quick-menu', Quick)
+Vue.component('quick-nav', QuickNav)
 
 export default new Router({
     // path: '/',

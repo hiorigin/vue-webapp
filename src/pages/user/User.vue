@@ -164,27 +164,27 @@
 </template>
 
 <script>
-    import Store from '@/store/store'
-    export default {
-        name: 'user',
-        data () {
-            return {
-                title: '个人中心'
-            }
-        },
-        mounted () {
-            this.$nextTick(function(){
-                Store.setTitle(this.title);
-            });
-        },
-        methods: {
-            
+import Util from '@/util/util'
+export default {
+    name: 'user',
+    data () {
+        return {
+            title: '个人中心'
         }
+    },
+    mounted () {
+        this.$nextTick(function(){
+            Util.setTitle(this.title);
+        });
+    },
+    methods: {
+        
     }
+}
 </script>
 
 <style lang="less" scoped>
-@import '../../assets/less/common';
+	@import '../../assets/less/common';
     .user{
         text-align: center;
         background-color: #E7E8EC;

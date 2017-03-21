@@ -25,11 +25,11 @@ export default {
     data() {
         return {
             imgs: [
-                'http://covteam.u.qiniudn.com/test18.jpg',
-                'http://covteam.u.qiniudn.com/test19.jpg',
-                'http://covteam.u.qiniudn.com/test20.jpg',
-                'http://covteam.u.qiniudn.com/test19.jpg',
-                'http://covteam.u.qiniudn.com/test21.jpg'
+                '/static/img/silder/test1.jpg',
+                '/static/img/silder/test2.jpg',
+                '/static/img/silder/test3.jpg',
+                '/static/img/silder/test4.jpg',
+                '/static/img/silder/test5.jpg'
             ]
         }
     },
@@ -61,7 +61,6 @@ export default {
     width: 100%;
     height: @headerHeight;
     line-height: @headerHeight;
-    // background-color: rgba(255,255,255,0);
     background-color: #f06;
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     overflow: hidden;

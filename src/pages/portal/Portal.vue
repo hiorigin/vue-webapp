@@ -2,261 +2,25 @@
 	<div class="portal">
         <div class="portal-wrap">
             <ul class="portal-nav">
-                <li class="nav-item">
-                    <a class="active" href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#/">特搜推荐</a>
+                <li v-for="title in titleData" class="nav-item">
+                    <a class="active" href="#/">{{title.title}}</a>
                 </li>
             </ul>
         </div>
         <div class="portal-wrap">
-            <div class="portal-focus">
-                <img src="../../assets/images/logo.png" alt="focus-pic">
-            </div>
-            <div class="portal-title">
-                本周热搜
-            </div>
+            <section v-for="hot in hotData">
+                <div class="portal-focus">
+                    <img :src="hot.img" alt="focus-pic">
+                </div>
+                <div class="portal-title">{{hot.title}}</div>
+            </section>
             <ul class="portal-content">
-                <li class="content-item">
+                <li v-for="item in contentData" class="content-item">
                     <a href="">
                         <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
+                            <img :src="item.img" alt="focus-pic">
                         </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
-                    </a>
-                </li>
-                <li class="content-item">
-                    <a href="">
-                        <div class="img-wrap">
-                            <img src="../../assets/images/vux_logo.png" alt="focus-pic">
-                        </div>
-                        <p>手机</p>
+                        <p>{{item.title}}</p>
                     </a>
                 </li>
             </ul>
@@ -265,17 +29,106 @@
 </template>
 
 <script>
-import Store from '@/store/store'
+import Util from '@/util/util'
 export default {
     name: 'portal',
     data() {
         return {
-            title: '搜索'
+            title: '搜索',
+            titleData: [
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                },
+                {
+                    title: '特搜推荐'
+                }
+            ],
+            contentData: [
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                },
+                {
+                    title: '手机',
+                    img: '/static/img/vux_logo.png'
+                }
+            ],
+            hotData: [{
+                title: "本周热搜",
+                img: '/static/img/logo.png'
+            }]
         }
     },
     mounted(){
         this.$nextTick(function(){
-            Store.setTitle(this.title);
+            Util.setTitle(this.title);
         });
     }
 }
