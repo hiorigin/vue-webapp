@@ -1,33 +1,26 @@
-import App from '../App'
 import Vue from 'vue'
 import Router from 'vue-router'
-import Resource from 'vue-resource'
+import Resource from 'vue-resource';
 
-import Home from '@/pages/home/Home'
-import Cart from '@/pages/cart/Cart'
-import Portal from '@/pages/portal/Portal'
-import Shopping from '@/pages/shopping/Shopping'
-import User from '@/pages/user/User'
-import Order from '@/pages/user/children/order/Order'
+import Home from '@/views/home/Home'
+import Portal from '@/views/portal/Portal'
+import Cart from '@/views/cart/Cart'
+import Shopping from '@/views/shopping/Shopping'
+import User from '@/views/user/User'
 
-import Search from '@/components/search/Search'
-import Header from '@/components/header/Header'
-import Footer from '@/components/footer/Footer'
-import QuickNav from '@/components/quick/Quick'
+import Banner from '@/components/Banner'
+import Navbar from '@/components/Navbar'
+import Quick from '@/components/Quick'
 
-Vue.use(Router);
-Vue.use(Resource);
-Vue.component('search', Search)
-Vue.component('quick-nav', QuickNav)
+Vue.use(Router)
+Vue.use(Resource)
+
+Vue.component('banner', Banner)
+Vue.component('navbar', Navbar)
+Vue.component('quick', Quick)
 
 export default new Router({
-    // path: '/',
-    // component: App,
-    routes: [{
-            path: '',
-            redirect: '/home'
-                // component: Home
-        },
+    routes: [
         {
             path: '/',
             redirect: '/home'
@@ -35,53 +28,31 @@ export default new Router({
         {
             path: '/home',
             name: 'Home',
-            components: {
-                default: Home,
-                search: Search,
-                header: Header,
-                footer: Footer
-            }
-        },
-        {
-            path: '/cart',
-            name: 'Cart',
-            components: {
-                default: Cart
-            }
-        },
-        {
-            path: '/order',
-            name: 'Order',
-            components: {
-                default: Order
-            }
+            component: Home
         },
         {
             path: '/portal',
             name: 'Portal',
-            components: {
-                default: Portal,
-                search: Search,
-                footer: Footer
-            }
+            component: Portal
         },
         {
             path: '/shopping',
             name: 'Shopping',
-            components: {
-                default: Shopping,
-                search: Search,
-                header: Header,
-                footer: Footer
-            }
+            component: Shopping
+        },
+        {
+            path: '/cart',
+            name: 'Cart',
+            component: Cart
         },
         {
             path: '/user',
             name: 'User',
-            components: {
-                default: User,
-                footer: Footer
-            }
+            component: User
+        },
+        {
+            path: '*',
+            redirect: '/home'
         }
     ]
-});
+})
